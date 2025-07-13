@@ -7,12 +7,29 @@ body {
 }
 
 .btn-primary{
-    transition: 0.4s ease;
+    transition: 0.8s ease;
 
     &:hover{
         outline: auto;
+        transform: scale(1.1);
     }
     &:active{
         transform: scale(0.8);
     }
 }
+
+.ojito{
+    border-color: white;
+    transition: 0.8s ease;
+
+    &:active{
+        transform: scale(0.8);
+    }
+    &:hover{
+        outline: auto;
+        transform: scale(1.1);
+    }
+}
+
+
+
