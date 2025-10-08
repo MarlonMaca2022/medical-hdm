@@ -8,7 +8,7 @@ function login() {
 
     if (inputUser === userer && inputPassword === password) {
         alert("Login successful!");
-        window.location.href = "preguntas.html"; // Redirect to home page
+        window.location.href = "Nuevo.html"; // Redirect to home page
     } else {
         alert("Invalid username or password. Please try again.");
     }
