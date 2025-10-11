@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fff0f5, #fbeff5);
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.question h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.francis {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #ffe4ee;
+        color: black;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.8);
+    }
+
+
+}
