@@ -1,0 +1,95 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 70px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, 
+        #117DBF 0%, #117DBF 33%, 
+        #ffc107 33%, #ffc107 66%, 
+        #dc3545 66%, #dc3545 100% 
+    );
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18); /* Sombra agregada */
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%; 
+    width: 4px;
+    height: 100%;
+    background-color: #000; 
+    border-radius: 1px;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.results-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+}
+.card-header {
+    background-color: #117DBF;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 1.5rem;
+
+    
+}
+.card-body {
+    padding: 1.5rem;
+
+    p{
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+    }
+}
+.score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f7740; /* Color verde para un buen resultado (puedes ajustarlo) */
+    margin-bottom: 1rem;
+}
+.risk-high {
+    color: #dc3545; /* Rojo para alto riesgo */
+    font-weight: bold;
+}
+.risk-moderate {
+    color: #ffc107; /* Amarillo para riesgo moderado */
+    font-weight: bold;
+}
+.risk-low {
+    color: #148BA6; /* Verde para bajo riesgo */
+    font-weight: bold;
+}

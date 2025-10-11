@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    
     background: linear-gradient(to bottom, #fff0f5, #fbeff5);
     min-height: 100vh;
     margin: 0;
@@ -38,6 +38,4 @@ body {
     &:active {
         transform: scale(0.8);
     }
-
-
 }
